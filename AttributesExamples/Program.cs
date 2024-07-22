@@ -1,4 +1,7 @@
-﻿namespace AttributesExamples;
+﻿using System.Reflection;
+
+[assembly:AssemblyVersion("2.0.1")]
+namespace AttributesExamples;
 
 class Program
 {
