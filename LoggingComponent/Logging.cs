@@ -3,8 +3,14 @@ namespace LoggingComponent;
 
 public class Logging
 {
-    [Conditional("LOG_INFO")]
+    // [Conditional("LOG_INFO")]
+    [Obsolete("Use LogToFile instead", true)]
     public static void LogToScreen(string message)
+    {
+        Console.WriteLine(message);
+    }
+
+    public static void LogToFile(string message)
     {
         Console.WriteLine(message);
     }
