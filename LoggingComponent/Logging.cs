@@ -1,10 +1,10 @@
 ﻿using System.Diagnostics;
 namespace LoggingComponent;
 
-public class Class1
+public class Logging
 {
     [Conditional("LOG_INFO")]
-    public static void Log(string message)
+    public static void LogToScreen(string message)
     {
         Console.WriteLine(message);
     }
