@@ -4,7 +4,7 @@ namespace LoggingComponent;
 public class Logging
 {
     // [Conditional("LOG_INFO")]
-    [Obsolete("Use LogToFile instead", true)]
+    [Obsolete("Use LogToFile instead", false)]
     public static void LogToScreen(string message)
     {
         Console.WriteLine(message);
