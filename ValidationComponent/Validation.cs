@@ -1,7 +1,7 @@
 using System;
 using System.Reflection;
 using ValidationComponent.CustomAttributes;
-namespace ValidationComponent.CustomAttributes
+namespace ValidationComponent
 {
     public static class Validation
     {

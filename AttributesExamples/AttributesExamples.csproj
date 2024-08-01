@@ -9,5 +9,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\LoggingComponent\LoggingComponent.csproj" />
+    <ProjectReference Include="..\ValidationComponent\ValidationComponent.csproj" />
   </ItemGroup>
 </Project>

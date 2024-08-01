@@ -27,6 +27,11 @@ namespace ValidationComponent.CustomAttributes
             SetProperties(maxLength, errorMessage);
         }
 
+        public StringLengthAttribute(int maxLength, string errorMessage, int minLength)
+        {
+            SetProperties(maxLength, errorMessage, minLength);
+        }
+
         public StringLengthAttribute(int maxLength, int minLength)
         {
             SetProperties(maxLength, minLength: minLength);
