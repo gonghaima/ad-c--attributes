@@ -3,6 +3,7 @@ using System.Reflection;
 using LoggingComponent;
 using ValidationComponent;
 using AttributesExamples.Models;
+using System.Text.Json;
 
 // [assembly:AssemblyVersion("2.0.1")]
 [assembly: AssemblyDescription("This is a sample description")]
@@ -47,6 +48,11 @@ class Program
         Console.ForegroundColor = ConsoleColor.White;
         Console.WriteLine($"Thank you! Employee with first name, {emp.FirstName}, and Id, {emp.Id}, has been entered successfully!!");
         Console.ResetColor();
+        Console.ReadKey();
+
+        var employeeJSON = JsonSerializer.Serialize<Employee>(emp);
+
+        Console.WriteLine(employeeJSON);
     }
 
     private static bool GetInput(Type t, string promptText, string fieldName, out string fieldValue)
