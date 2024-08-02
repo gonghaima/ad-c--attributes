@@ -13,7 +13,7 @@ class Program
     static void Main(string[] args)
     {
         Employee emp = new Employee();
-        // Department dept = new Department();
+        Department dept = new Department();
 
         string empId = null;
         string firstName = null;
@@ -22,7 +22,7 @@ class Program
 
 
         Type employeeType = typeof(Employee);
-        // Type departmentType = typeof(Department);
+        Type departmentType = typeof(Department);
 
         if (GetInput(employeeType, "Please enter the employee's id", "Id", out empId))
         {
@@ -35,6 +35,11 @@ class Program
         if (GetInput(employeeType, "Please enter the employee's post code", "PostCode", out postCode))
         {
             emp.PostCode = postCode;
+        }
+
+        if (GetInput(departmentType, "Please enter the employee's department code", "DeptShortName", out deptShortName))
+        {
+            dept.DeptShortName = deptShortName;
         }
 
         Console.WriteLine();
